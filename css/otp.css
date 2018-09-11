@@ -1,0 +1,29 @@
+.otp-style {
+    font-size: 32px;
+    color: #fff;font-family: Roboto;
+    }
+    
+    .otp-message-txt {
+        font-size: 32px;color: #979797;font-family: Roboto;
+    } 
+    
+    .otp_message {
+       
+        height: 100px; 
+    }
+    .resend_otp {
+        font-size: 38px;
+    }
+    .resend_otp {
+        font-size: 38px;    margin-top: 40px;
+    }
+    .otp_timmer {
+        color:#fff;
+    }
+    .resend_otp  a {
+        text-decoration: none;
+        color: #979797;opacity: 0.8;
+    }
+    .sign_text {
+        padding-top: 4%;
+    }

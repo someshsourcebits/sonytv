@@ -1,0 +1,28 @@
+#slider .nav>li>a>img{
+    width: 278px;
+    height: 193px;
+}
+#slider2 .nav>li>a>img {
+    width: 278px;
+    height: 193px;  
+}
+
+.menu_icon {
+    background: transparent;
+    border: none;
+}
+
+.menu-scroll {
+    overflow-y: scroll;
+    height: 700px;
+}
+
+.menu-hide-scrool {
+    height: 264px;
+    overflow-y: hidden;
+}
+
+.nav>li img:hover {
+    border: 1px solid red;
+    transform: scale(1.1);
+}

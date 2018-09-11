@@ -1,0 +1,17 @@
+.myaccount {
+    padding-left: 3%;
+    padding-right: 3%;
+ 
+}
+.myaccount .table td {
+   width:12%;font-family: Roboto;
+   font-size: 38px;
+   font-weight: normal;
+   font-style: normal;
+   font-stretch: normal;
+   color: #eeeeee;opacity: 0.5;line-height: 61px;
+}
+
+.table>thead:first-child>tr td:first-child {
+
+}
