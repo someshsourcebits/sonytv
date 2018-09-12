@@ -1,11 +1,11 @@
 .search {
 
-    padding-bottom: 17%;
+    padding-bottom: 17%;    text-align: left;font-family:Robot;
   
 }
 .search a {
     color: #fff;
-    font-size: 57px;text-decoration: none;font-family: "Robot";
+    font-size: 57px;text-decoration: none;font-family:Robot;
 }
 .sony-logo img{
 width:80px;
@@ -56,4 +56,20 @@ height: 100px;
 }
 .continue:active:focus,.continue:active,.continue:focus {
     background: #fa5000;outline: none;color: #fff;
+}
+
+li.active img  {
+    border: solid 3px #fa5000;
+    transform: scale(1.1);
+    background: none;
+}
+.navbar-default .navbar-nav>.active>a {
+    background: none;
+}
+.navbar-default .navbar-nav>.active>a,.navbar-nav>.active>a:hover,.navbar-default .navbar-nav>.active>a:hover {
+    background: none;
+}
+.menu-title {
+    font-size: 36px;color:#fff;opacity: 0.5;
+    font-family: Roboto;
 }

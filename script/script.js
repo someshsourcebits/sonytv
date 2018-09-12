@@ -53,7 +53,7 @@ $(function () {
 		}, 200, function () {
 			$('#slider ul li:last-child').prependTo('#slider ul');
 			$('#slider ul').css('left', '');
-			$("#slider ul li").removeClass("active");
+			//$("#slider ul li").removeClass("active");
 
 
 		});
@@ -69,42 +69,63 @@ $(function () {
 		});
 	};
 
-	$('a.control_prev').click(function () {
-		moveLeft();
-	});
 
-	$('a.control_next').click(function () {
-		moveRight();
-	});
-	/****  test */
-	$("body").keyup(function (e) {
-
-
-		var $currDiv = $("#border");
-		//	$currDiv.css("border", "1px solid red");
-		if (e.keyCode == 37) {
-			$currDiv = $currDiv.next();
-			$("li").css("border", "");
-			$currDiv.css("border", "1px solid red");
-		}
-
-	});
-
-	/****  test */
 
 	$("body").keyup(function (e) {
+		var $this = $(".active");
+
 		if (e.keyCode == 37) { // left
+
+			$this.removeClass('active');
+			$this.next().addClass('active');
+
+
 
 			moveRight();
 
 
 		} else if (e.keyCode == 39) { // right
+			$this.removeClass('active');
+
+			$this.prev().addClass('active');
 			moveLeft();
 		}
 	});
 
 
+	// $(".navbar").scroll(function() {
 
+	// 	if ($(this).scrollTop()<0)
+	// 	 {
+
+	// 		$('.fade').fadeOut();
+			
+	// 	 }
+	// 	else
+	// 	 {
+	// 	  $('.fade').fadeIn();
+	// 	 }
+	//  });
+
+
+	$(window).scroll(function(){
+		var threshold = 200; // number of pixels before bottom of page that you want to start fading
+		var value=($(window).scrollTop);
+	
+		setTimeout(function(){	$(".div1").slideUp();  }, 5000);
+		
+	
+		var op = (($(document).height() - $(window).height()) - $(window).scrollTop()) / threshold;
+	
+		  if( op <= 0 ){
+			
+			  $("#thing-to-hide").hide();
+		  } else {
+			  $("#thing-to-hide").show();
+		  }
+		  $("#thing-to-hide").css("opacity", op ); 
+	
+	  });
 
 
 
