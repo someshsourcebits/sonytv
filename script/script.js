@@ -18,7 +18,9 @@ $(function () {
 
 	/*---------------------*/
 
-
+	$(function() {
+        $('.lazy').Lazy();
+    });
 
 
 	//scrool homepage menu
@@ -76,21 +78,30 @@ $(function () {
 
 		if (e.keyCode == 37) { // left
 
+
+
+
+
+			moveRight();
 			$this.removeClass('active');
 			$this.next().addClass('active');
 
 
 
-			moveRight();
-
-
 		} else if (e.keyCode == 39) { // right
-			$this.removeClass('active');
+
+			moveLeft();
+
 
 			$this.prev().addClass('active');
-			moveLeft();
+			$this.removeClass('active');
 		}
 	});
+
+
+
+
+
 
 
 	// $(".navbar").scroll(function() {
@@ -99,7 +110,7 @@ $(function () {
 	// 	 {
 
 	// 		$('.fade').fadeOut();
-			
+
 	// 	 }
 	// 	else
 	// 	 {
@@ -108,24 +119,27 @@ $(function () {
 	//  });
 
 
-	$(window).scroll(function(){
+
+
+	$(window).scroll(function () {
 		var threshold = 200; // number of pixels before bottom of page that you want to start fading
-		var value=($(window).scrollTop);
-	
-		setTimeout(function(){	$(".div1").slideUp();  }, 5000);
-		
-	
+		var value = ($(window).scrollTop);
+
+
+
+
 		var op = (($(document).height() - $(window).height()) - $(window).scrollTop()) / threshold;
-	
-		  if( op <= 0 ){
-			
-			  $("#thing-to-hide").hide();
-		  } else {
-			  $("#thing-to-hide").show();
-		  }
-		  $("#thing-to-hide").css("opacity", op ); 
-	
-	  });
+
+		if (op <= 0) {
+
+			$("#thing-to-hide").hide();
+		} else {
+			$("#thing-to-hide").show();
+		}
+		$("#thing-to-hide").css("opacity", op);
+
+	});
+
 
 
 
