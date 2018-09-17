@@ -1,16 +1,16 @@
-#slider .nav>li>a>img {
+#slider .nav > li > a > img {
     width: 278px;
 }
 
-.menu_icon .nav>li>a>img:hover {
+.menu_icon .nav > li > a > img:hover {
     opacity: unset;
 }
 
-.menu_icon .nav>li>a>img {
-     opacity: 0.6;
+.menu_icon .nav > li > a > img {
+    opacity: 0.6;
 }
 
-#slider2 .nav>li>a>img {
+#slider2 .nav > li > a > img {
     width: 278px;
     height: 193px;
 }
@@ -35,9 +35,10 @@
 
 
 
-html, body {
-  
-font-family:"Roboto";
+html,
+body {
+
+    font-family: "Roboto";
 }
 
 
@@ -68,7 +69,8 @@ font-family:"Roboto";
     line-height: 300px;
 }
 
-a.control_prev, a.control_next {
+a.control_prev,
+a.control_next {
     position: absolute;
     top: 40%;
     z-index: 999;
@@ -85,7 +87,8 @@ a.control_prev, a.control_next {
     cursor: pointer;
 }
 
-a.control_prev:hover, a.control_next:hover {
+a.control_prev:hover,
+a.control_next:hover {
     opacity: 1;
     -webkit-transition: all 0.2s ease;
 }
@@ -105,3 +108,53 @@ a.control_next {
     width: 160px;
     font-size: 18px;
 }
+
+/* slider ends*/
+
+/* slider menu start*/
+
+#slider1 {
+    position: relative;
+    overflow: hidden;
+    margin: 20px auto 0 auto;
+    border-radius: 4px;
+}
+
+#slider1 ul {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    height: 200px;
+    list-style: none;
+}
+
+#slider1 ul li {
+    position: relative;
+    display: block;
+    float: left;
+    margin: 0;
+    padding: 0;
+    width: 300px;
+    text-align: center;
+    line-height: 300px;
+}
+
+a.control_prev,
+a.control_next {
+    position: absolute;
+    top: 40%;
+    z-index: 999;
+    display: block;
+    padding: 4% 3%;
+    width: auto;
+    height: auto;
+    background: #2a2a2a;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+/* end*/
